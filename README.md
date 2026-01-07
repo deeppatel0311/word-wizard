@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🪄 WordWizard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and powerful text processing tool built with React. Transform your text with essential formatting options including case conversion, text manipulation, and encoding tools.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### Case Conversion (6 types)
+- **UPPERCASE** - Convert all text to uppercase
+- **lowercase** - Convert all text to lowercase  
+- **Sentence case** - Capitalize first letter of first word
+- **Title Case** - Capitalize first letter of each word
+- **aLtErNaTiNg** - Alternate between lower and uppercase
+- **iNvErSe** - Invert the case of each character
 
-### `npm start`
+### Text Manipulation (6 tools)
+- **Reverse Text** - Reverse the entire text
+- **Remove Extra Spaces** - Clean up extra whitespace
+- **Remove Numbers** - Strip all numeric characters
+- **Remove Special Chars** - Keep only letters, numbers, and spaces
+- **Remove Duplicates** - Remove duplicate lines
+- **Sort A-Z** - Sort lines alphabetically
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Encoding
+- **Base64 Encode** - Encode text to Base64
+- **Base64 Decode** - Decode Base64 to text
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Real-time Statistics
+- Character count
+- Word count
+- Line count
+- Number count
 
-### `npm test`
+### User Experience
+- 📋 Copy to clipboard
+- 🗑️ Clear all text
+- ↶ Undo/↷ Redo functionality
+- 📱 Mobile-responsive design
+- 🔔 Instant notifications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Live Demo
 
-### `npm run build`
+**[Try WordWizard](https://deeppatel0311.github.io/word-wizard)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React 18.2.0
+- React Router DOM 6.20.1
+- Modern CSS with inline styles
+- GitHub Pages deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏃‍♂️ Getting Started
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/deeppatel0311/word-wizard.git
+   cd word-wizard
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Build for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Builds the app for production to the `build` folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔒 Privacy & Security
 
-### Code Splitting
+All text processing happens locally in your browser - no data is sent to external servers. Your text remains completely private and secure.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).

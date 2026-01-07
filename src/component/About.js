@@ -2,47 +2,60 @@ import React from 'react'
 
 export default function About() {
     return (
-        <>
-            <div className='container my-5'>
-                <div className="accordion" id="accordionExample">
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
-                            </button>
-                        </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
+        <div style={{minHeight: '80vh', background: '#f9fafb', padding: '2rem 1rem'}}>
+            <div style={{maxWidth: '800px', margin: '0 auto'}}>
+                <div style={{background: 'white', borderRadius: '0.5rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', padding: '2rem'}}>
+                    <div style={{textAlign: 'center', marginBottom: '2rem'}}>
+                        <h1 style={{
+                            fontSize: '2.5rem',
+                            fontWeight: 'bold',
+                            color: '#2563eb',
+                            marginBottom: '1rem',
+                            textAlign: 'center'
+                        }}>🪄 About WordWizard</h1>
+                        <p style={{fontSize: '1.125rem', color: '#6b7280'}}>Learn more about our text utility application</p>
                     </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingTwo">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
+                    
+                    <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
+                        <div style={{borderLeft: '4px solid #3b82f6', paddingLeft: '1.5rem'}}>
+                            <h2 style={{fontSize: '1.25rem', fontWeight: '600', color: '#1f2937', marginBottom: '0.5rem'}}>What is WordWizard?</h2>
+                            <p style={{color: '#4b5563'}}>
+                                WordWizard is a simple text processing application with essential transformation functions. 
+                                It includes case conversion (6 types), text manipulation tools, Base64 encoding/decoding, 
+                                and real-time text statistics - all processing locally in your browser.
+                            </p>
                         </div>
-                    </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingThree">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
+                        
+                        <div style={{borderLeft: '4px solid #10b981', paddingLeft: '1.5rem'}}>
+                            <h2 style={{fontSize: '1.25rem', fontWeight: '600', color: '#1f2937', marginBottom: '0.5rem'}}>Key Features</h2>
+                            <ul style={{color: '#4b5563', lineHeight: '1.6'}}>
+                                <li>• <strong>Case Conversion (6 types):</strong> UPPERCASE, lowercase, Sentence case, Title Case, aLtErNaTiNg, and iNvErSe</li>
+                                <li>• <strong>Text Manipulation:</strong> Reverse text, remove extra spaces, numbers, special characters, duplicates, and sort lines</li>
+                                <li>• <strong>Base64 Encoding:</strong> Encode and decode Base64 strings with error handling</li>
+                                <li>• <strong>Real-time Statistics:</strong> Live character, word, line, and number counting</li>
+                                <li>• <strong>User Experience:</strong> Undo/redo functionality, instant notifications, copy to clipboard, and mobile-responsive design</li>
+                            </ul>
+                        </div>
+                        
+                        <div style={{borderLeft: '4px solid #8b5cf6', paddingLeft: '1.5rem'}}>
+                            <h2 style={{fontSize: '1.25rem', fontWeight: '600', color: '#1f2937', marginBottom: '0.5rem'}}>Technology Stack</h2>
+                            <p style={{color: '#4b5563'}}>
+                                WordWizard is built using modern web technologies including React 18, React Router for navigation, 
+                                and modern CSS for responsive styling. The application is designed to be fast, accessible, 
+                                and easy to use across all devices.
+                            </p>
+                        </div>
+                        
+                        <div style={{borderLeft: '4px solid #f97316', paddingLeft: '1.5rem'}}>
+                            <h2 style={{fontSize: '1.25rem', fontWeight: '600', color: '#1f2937', marginBottom: '0.5rem'}}>Privacy & Security</h2>
+                            <p style={{color: '#4b5563'}}>
+                                Your privacy is important to us. All text processing happens locally in your browser - 
+                                no data is sent to external servers. Your text remains completely private and secure.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

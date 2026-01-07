@@ -1,34 +1,26 @@
-import './App.css';
 import React from 'react'
-import Navbar from './component/Navbar';
 import TextFrom from './component/TextFrom';
-
 import About from './component/About';
+import Footer from './component/Footer';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom"
-
 
 function App() {
   return (
-    <>
-    
     <Router>
-    <Navbar />  
-      <Routes>
-        <Route path="/about" element={<About />}>
-        </Route>
-        <Route path="/text-utility" element={<TextFrom />}>
-        </Route>
-        {/* <Route path="/">
-          <Home /> 
-        </Route> */}
-      </Routes>
+      <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
+        <main style={{flexGrow: 1}}>
+          <Routes>
+            <Route path="/" element={<TextFrom />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
-    </>
   );
 }
 

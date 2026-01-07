@@ -1,25 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-
 export default function Navbar() {
     return (
-        <>
-            <nav className="navbar navbar-dark navbar-expand-lg light bg-dark">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Navbar</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-                            <Link className="nav-link" to="/text-utility">Text Utility</Link>
-                            <Link className="nav-link" to="/about">About</Link>
-                        </div>
-                    </div>
+        <nav style={{background: 'linear-gradient(to right, #2563eb, #9333ea)', padding: '1rem'}}>
+            <div style={{maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <Link to="/" style={{color: 'white', textDecoration: 'none', fontSize: '1.5rem', fontWeight: 'bold'}}>
+                    WordWizard
+                </Link>
+                <div style={{display: 'flex', gap: '2rem'}}>
+                    <Link to="/" style={{color: 'white', textDecoration: 'none'}}>
+                        Home
+                    </Link>
+                    <Link to="/about" style={{color: 'white', textDecoration: 'none'}}>
+                        About
+                    </Link>
                 </div>
-            </nav>
-        </>
+            </div>
+        </nav>
     )
 }
