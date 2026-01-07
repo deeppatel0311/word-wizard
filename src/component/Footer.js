@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -66,20 +67,20 @@ export default function Footer() {
             </h3>
             <ul style={{ color: "#d1d5db", listStyle: "none", padding: 0 }}>
               <li style={{ marginBottom: "0.5rem" }}>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   style={{ color: "#d1d5db", textDecoration: "none" }}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li style={{ marginBottom: "0.5rem" }}>
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   style={{ color: "#d1d5db", textDecoration: "none" }}
                 >
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

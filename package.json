@@ -2,7 +2,7 @@
   "name": "text-utilities",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://deeppatel0311.github.io/word-wizard",
+  "homepage": "https://deeppatel0311.github.io/word-wizard/",
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
